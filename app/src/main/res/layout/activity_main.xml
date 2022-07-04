@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video URL"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/download"
+        android:layout_below="@id/cardview"
+        android:layout_width="330dp"
+        android:background="@drawable/button_style"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="İndir" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_below="@id/download"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YouTube Videosunu MP4 Dosyalarına Nasıl Dönüştürebilirim?"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="1. YouTube uygulamasını açın ve MP4'e dönüştürmek istediğiniz videoyu bulun."
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="2. Videoyu oynatın ve 'Paylaş' düğmesine dokunun."
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="3. Paylaşım menüsünden 'Kopyala'ya dokunun."
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="4. Kopyaladığınız 'YouTube URL'sini 'Video Url' bölümüne yapıştırın, ardından 'İNDİR' düğmesine tıklayın."
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_below="@id/cardview1"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="İndirilen MP4 Dosyaları Nerede Saklanır?"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:text="İndirdiğiniz dosyalar otamatik olarak telefonunuzdaki 'Downloads' klasörüne kaydedilir. Android cihazınızda indirdiklerinizi Dosyalarım uygulamanızda (bazı telefonlarda Dosya Yöneticisi olarak adlandırılır) bulabilirsiniz."
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_below="@id/cardview4"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En İyi Ücretsiz YouTube'dan MP4'e Dönüştürücü"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:text="Youtube Video Dönüştürücü, tüm cihazlarınız için uygun, en yüksek kalitede MP4 formatında binlerce YouTube videosunu ücretsiz olarak indirmenize olanak tanır."
+                android:padding="5dp"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
+            android:layout_below="@id/cardview2"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neden Youtube Video Dönüştürücü kullanmalısınız?"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:text="1. Tüm Youtube videolarını en yüksek kalitede MP4 formatında indirebilirsiniz."
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:text="2. Hızlı yükleme hızı ve kullanımı basit "
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:text="3. Hesap kaydı gerekmez ve güvenlidir"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:text="4. Her zaman ücretsiz ve sınırsız sayıda dönüşüm ve indirme"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

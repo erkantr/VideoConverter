@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashSrcreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="80dp"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="210dp"
+        android:layout_marginTop="-30dp"
+        android:layout_gravity="center"
+        android:layout_height="210dp"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/yazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:paddingTop="20dp"
+        android:text="Video Dönüştürücü"
+        android:textColor="#FFFFFF"
+        android:textSize="33sp"
+        tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Made with Erkan T."
+            android:fontFamily="@font/bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-34dp"
+            android:layout_gravity="bottom|center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
